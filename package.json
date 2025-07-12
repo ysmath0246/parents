@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && git add dist -f && git commit -m \"🚀 자동 배포\" && git subtree push --prefix dist origin gh-pages --force"
+    "deploy": "npm run build && git add docs -f && git commit -m \"🚀 deploy docs\" && git subtree push --prefix docs origin gh-pages --force"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.12",

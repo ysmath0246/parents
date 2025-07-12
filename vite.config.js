@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/parents/',     // ← 이 줄을 추가!
+  base: '/parents/',        // ← GitHub Pages에 올라갈 경로
+  build: {
+    outDir: 'docs',         // ← 빌드 결과물을 docs/ 폴더에!
+  },
   plugins: [react()],
 })
