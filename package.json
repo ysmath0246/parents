@@ -2,6 +2,7 @@
   "name": "parent-web",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://ysmath0246.github.io/parents",
   "type": "module",
   "scripts": {
     "dev": "vite",
